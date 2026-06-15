@@ -1,6 +1,8 @@
 const fs = require('fs');
+const path = require('path');
 
-const data = JSON.parse(fs.readFileSync('norton_data.json', 'utf8'));
+const dataPath = path.join(__dirname, 'norton_data.json');
+const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
 const pages = {
     'about': { title: 'About Us', subtitle: 'Learn about our rich history and commitment to excellence.' },
@@ -225,7 +227,8 @@ function generateHTML(category, info, items) {
 </body>
 </html>`;
 
-    fs.writeFileSync(`../public/${category}.html`, htmlTemplate);
+    const outputPath = path.join(__dirname, '../public', `${category}.html`);
+    fs.writeFileSync(outputPath, htmlTemplate);
     console.log(`Generated ${category}.html in public directory`);
 }
 
