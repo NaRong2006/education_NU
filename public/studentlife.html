@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life & Services | Norton University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header { background-color: var(--primary-dark); color: white; padding: 10rem 2rem 4rem; text-align: center; }
+        .page-content { display: grid; grid-template-columns: 280px 1fr; gap: 4rem; margin-top: 4rem; margin-bottom: 4rem; }
+        .sidebar-nav { background: var(--surface-color); border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.08); overflow: hidden; position: sticky; top: 100px; }
+        .sidebar-nav a { display: block; padding: 1rem 1.5rem; color: var(--text-secondary); font-weight: 500; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .sidebar-nav a:hover, .sidebar-nav a.active { background: var(--primary); color: white; }
+        .content-body img { border-radius: var(--radius-xl); margin-bottom: 2rem; box-shadow: var(--shadow-md); width: 100%; max-height: 500px; object-fit: cover; }
+        .content-body p, .content-body li { font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; }
+        .content-body ul { margin-left: 2rem; margin-bottom: 1.5rem; list-style-type: disc; }
+        .tab-content { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 900px) { .page-content { grid-template-columns: 1fr; } .sidebar-nav { position: static; } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-wrapper">
+        <div class="top-bar">
+            <div class="container" style="display: flex; justify-content: flex-end; align-items: center; gap: 2rem;">
+                <ul class="top-bar-links" style="margin-left: auto;">
+                    <li><a href="studentlife.html#student-services">Student's services</a></li>
+                    <li><a href="studentlife.html#staff">Staff</a></li>
+                    <li><a href="studentlife.html#publication">Blog/Research</a></li>
+                    <li><a href="studentlife.html#mail">Mail</a></li>
+                    <li><a href="studentlife.html#my-nu">My NU</a></li>
+                    <li><a href="studentlife.html#calendar">Calendar</a></li>
+                </ul>
+                <div class="lang-switcher" onclick="alert('Language switching functionality will be connected to your backend translation system.')">
+                    <span class="active">EN</span>
+                    <span style="color: rgba(255,255,255,0.3);">|</span>
+                    <span>KH</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="https://www.norton-u.com/images/logo-banner-blue.png" alt="Norton University">
+                    </a>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="about.html" style="">About us ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="about.html#why-nu">Why NU?</a>
+                            <a href="about.html#campus">Campus</a>
+                            <a href="about.html#library-facility">Library and Facility</a>
+                            <a href="about.html#government-recognition">Government Recognition</a>
+                            <a href="about.html#mission-vision">Mission Vision and Goal</a>
+                            <a href="about.html#rector-message">Message Of Vice Rector</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="academics.html" style="">Academics ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="academics.html#foundation">Foundation Studies</a>
+                            <a href="academics.html#cs">College of Sciences</a>
+                            <a href="academics.html#social-sciences">College of Social Sciences</a>
+                            <a href="academics.html#cahl">Arts, Humanities</a>
+                            <a href="academics.html#fhs">Faculty of Health</a>
+                            <a href="academics.html#nugs">Graduate School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="admissions.html" style="">Admissions ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="admissions.html#under-graduate">Under Graduate</a>
+                            <a href="admissions.html#admission-graduate">Graduate School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="collaborations.html" style="">Collaborations ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="collaborations.html#mou">MOU</a>
+                            <a href="collaborations.html#governing-council">Governing Council</a>
+                            <a href="collaborations.html#aupf">AUPF</a>
+                        </div>
+                    </li>
+                    <li><a href="studentlife.html#publication" class="nav-item" style="color: var(--primary);">Research</a></li>
+                </ul>
+                <button class="btn btn-primary" style="padding: 0.6rem 1.5rem;">Apply Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1 class="section-title" style="background: none; -webkit-text-fill-color: white; color: white;">Student Life & Services</h1>
+        <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem;">Resources and updates for our students.</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container page-content">
+        <!-- Sidebar Navigation -->
+        <aside>
+            <div class="sidebar-nav" id="sidebarNav">
+                <a href="#student-services" class="tab-link active" data-target="student-services">Student Services</a>
+<a href="#staff" class="tab-link " data-target="staff">Staff</a>
+<a href="#publication" class="tab-link " data-target="publication">Research and Publication</a>
+<a href="#mail" class="tab-link " data-target="mail">NU Mail</a>
+<a href="#my-nu" class="tab-link " data-target="my-nu">My NU Portal</a>
+<a href="#calendar" class="tab-link " data-target="calendar">Academic Calendar</a>
+
+            </div>
+        </aside>
+
+        <!-- Article Bodies -->
+        <div>
+            
+        <article class="content-body tab-content active" id="content-student-services" style="display: block;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Student Services</h2>
+            <p><a target="_blank" rel="noopener noreferrer" href="https://cdn.norton-u.com/permission_letter.pdf"> Student's Permission Letter </a><br> <a target="_blank" rel="noopener noreferrer" href="https://cdn.norton-u.com/NU-Format-Sarana2.zip">Norton's Format Thesis</a><br><a target="_blank" rel="noopener noreferrer" href="https://cdn.norton-u.com/NU-Format-Thesis-and-Sarana-FHS-2026.zip"> Norton's Format Thesis and Research Papers (Faculty of Health Sciences)</a><br> <a target="_blank" rel="noopener noreferrer" href="https://cdn.norton-u.com/Internal-Regulation-2024.pdf" download="file">Internal Regulation</a> </p><div ><iframe  src="https://cdn.norton-u.com/Internal-Regulation-2024/" title="Internal Regulation" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope;" allowfullscreen=""></iframe></div>
+        </article>
+
+        <article class="content-body tab-content " id="content-staff" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Staff</h2>
+            <p>Content for Staff is currently being updated by the university.</p>
+        </article>
+
+        <article class="content-body tab-content " id="content-publication" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Research and Publication</h2>
+            <div>
+    <div >
+        <div >
+            <div >
+                <div >
+    <ul >
+        <li >
+            <a href="/">Home</a>
+        </li>
+                                                <li >
+                    
+                    <a href="/publication">Publication</a>
+                </li>
+                        </ul>
+</div>
+            </div>
+            <h1 >Publication</h1>
+        </div>
+        <hr>
+    </div>
+    <div >
+        <div >
+                            <div >
+                    <div >
+                        <a href="/publication/8"
+                           >
+                            <img src="https://cdn.norton-u.com/nu/February-2025/master-brochure-20251739954552.webp" alt="Master Brochure 2026" >
+                        </a>
+                        <div >
+                            <h3 >
+                                <a href="/publication/8">Master Brochure 2026</a>
+                            </h3>
+                            <p >
+                                Master Brochure 2026
+                            </p>
+                            <div>
+                                <a href="/publication/8"
+                                   >
+                                    Read more...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div >
+                    <div >
+                        <a href="/publication/5"
+                           >
+                            <img src="https://cdn.norton-u.com/nu/storage/April-2022/nu-newsletter-20221649650388.png" alt="NU Newsletter 2022" >
+                        </a>
+                        <div >
+                            <h3 >
+                                <a href="/publication/5">NU Newsletter 2022</a>
+                            </h3>
+                            <p >
+                                
+                            </p>
+                            <div>
+                                <a href="/publication/5"
+                                   >
+                                    Read more...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div >
+                    <div >
+                        <a href="/publication/3"
+                           >
+                            <img src="https://cdn.norton-u.com/nu/storage/April-2022/norton-tech-news-20221649219159.png" alt="Norton Tech News 2022" >
+                        </a>
+                        <div >
+                            <h3 >
+                                <a href="/publication/3">Norton Tech News 2022</a>
+                            </h3>
+                            <p >
+                                
+                            </p>
+                            <div>
+                                <a href="/publication/3"
+                                   >
+                                    Read more...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div >
+                    <div >
+                        <a href="/publication/1"
+                           >
+                            <img src="https://cdn.norton-u.com/nu/storage/April-2022/internal-regulation1649406510.png" alt="Internal Regulation" >
+                        </a>
+                        <div >
+                            <h3 >
+                                <a href="/publication/1">Internal Regulation</a>
+                            </h3>
+                            <p >
+                                
+                            </p>
+                            <div>
+                                <a href="/publication/1"
+                                   >
+                                    Read more...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+        <div >
+            
+        </div>
+    </div>
+</div>
+        </article>
+
+        <article class="content-body tab-content " id="content-mail" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">NU Mail</h2>
+            
+    <div style="background: var(--surface-color); padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid rgba(0,0,0,0.06); box-shadow: var(--shadow-sm);">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-dark);">Official University Communication</h3>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 2rem;">All official correspondence from faculty, administration, and university services will be sent to your Norton University Email Address (<code>student.id@norton-u.com</code>).</p>
+        
+        <ul style="margin-left: 1.5rem; margin-bottom: 2rem; color: var(--text-secondary); line-height: 1.8;">
+            <li>Receive urgent notifications regarding class schedules or cancellations.</li>
+            <li>Submit official requests to the registrar or academic departments.</li>
+            <li>Collaborate with peers on group assessments via shared drives.</li>
+        </ul>
+
+        <a href="https://mail.norton-u.com" target="_blank" class="btn btn-primary" style="padding: 0.8rem 2rem;">Access Webmail</a>
+    </div>
+        </article>
+
+        <article class="content-body tab-content " id="content-my-nu" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">My NU Portal</h2>
+            
+    <div style="background: var(--surface-color); padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid rgba(0,0,0,0.06); box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="background: var(--primary-light); color: var(--primary-dark); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">🎓</div>
+            <h3 style="font-size: 1.5rem; margin: 0; color: var(--primary-dark);">Student Information System (SIS)</h3>
+        </div>
+        
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 2rem;">Welcome to the official Norton University Portal. This centralized platform allows you to manage your entire academic journey securely online.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+            <div style="padding: 1.5rem; background: rgba(0,0,0,0.02); border-radius: var(--radius-lg);">
+                <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">📚 Academic Records</h4>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">View current enrollments, access classroom materials, submit assessments, and check real-time attendance.</p>
+            </div>
+            <div style="padding: 1.5rem; background: rgba(0,0,0,0.02); border-radius: var(--radius-lg);">
+                <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">🗓️ Schedules</h4>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">Export your daily timetable, view classroom locations, and sync with the academic calendar.</p>
+            </div>
+            <div style="padding: 1.5rem; background: rgba(0,0,0,0.02); border-radius: var(--radius-lg);">
+                <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">⚙️ Profile Settings</h4>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">Update your student profile, reset passwords securely, and manage digital student ID scans.</p>
+            </div>
+        </div>
+
+        <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 2rem;">
+            <p style="font-weight: 500; margin-bottom: 1rem;">Log in using your official Student ID and Password:</p>
+            <a href="https://portal.norton-u.com/login" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem;">
+                Secure Login to Portal
+                
+            </a>
+            <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-top: 1rem;">If you have forgotten your password, use the <a href="https://portal.norton-u.com/auth/student/forgot-password" target="_blank" style="color: var(--primary); text-decoration: underline;">password recovery tool</a>.</p>
+        </div>
+    </div>
+        </article>
+
+        <article class="content-body tab-content " id="content-calendar" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Academic Calendar</h2>
+            <p>View the full schedule for the upcoming semester, including exam dates, holidays, and enrollment deadlines.</p>
+        <ul style="margin-top: 1rem;">
+            <li><strong>Semester 1 Start:</strong> October 2026</li>
+            <li><strong>Midterm Exams:</strong> December 2026</li>
+            <li><strong>Final Exams:</strong> February 2027</li>
+        </ul>
+        </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 Norton University. All rights reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="index.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if(mobileToggle) {
+            mobileToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.nav-item.has-dropdown > a').forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) { e.preventDefault(); toggle.parentElement.classList.toggle('active'); }
+            });
+        });
+
+        // Tab Switching Logic
+        function switchTab(targetId) {
+            // Update sidebar active state
+            document.querySelectorAll('.tab-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-target') === targetId) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Update content display
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.style.display = 'none';
+                content.classList.remove('active');
+            });
+            const targetContent = document.getElementById('content-' + targetId);
+            if (targetContent) {
+                targetContent.style.display = 'block';
+                // small delay to trigger animation
+                setTimeout(() => targetContent.classList.add('active'), 10);
+            }
+        }
+
+        // Handle clicks
+        document.getElementById('sidebarNav').addEventListener('click', (e) => {
+            if (e.target.classList.contains('tab-link')) {
+                const targetId = e.target.getAttribute('data-target');
+                switchTab(targetId);
+            }
+        });
+
+        // Handle direct URL hashes on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) {
+                switchTab(hash);
+                // Scroll to top of content
+                setTimeout(() => window.scrollTo(0, 0), 100);
+            }
+        });
+        
+        // Handle hash changes (e.g. from top nav)
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) { switchTab(hash); }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Norton University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header { background-color: var(--primary-dark); color: white; padding: 10rem 2rem 4rem; text-align: center; }
+        .page-content { display: grid; grid-template-columns: 280px 1fr; gap: 4rem; margin-top: 4rem; margin-bottom: 4rem; }
+        .sidebar-nav { background: var(--surface-color); border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.08); overflow: hidden; position: sticky; top: 100px; }
+        .sidebar-nav a { display: block; padding: 1rem 1.5rem; color: var(--text-secondary); font-weight: 500; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .sidebar-nav a:hover, .sidebar-nav a.active { background: var(--primary); color: white; }
+        .content-body img { border-radius: var(--radius-xl); margin-bottom: 2rem; box-shadow: var(--shadow-md); width: 100%; max-height: 500px; object-fit: cover; }
+        .content-body p, .content-body li { font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; }
+        .content-body ul { margin-left: 2rem; margin-bottom: 1.5rem; list-style-type: disc; }
+        .tab-content { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 900px) { .page-content { grid-template-columns: 1fr; } .sidebar-nav { position: static; } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-wrapper">
+        <div class="top-bar">
+            <div class="container" style="display: flex; justify-content: flex-end; align-items: center; gap: 2rem;">
+                <ul class="top-bar-links" style="margin-left: auto;">
+                    <li><a href="studentlife.html#student-services">Student's services</a></li>
+                    <li><a href="studentlife.html#staff">Staff</a></li>
+                    <li><a href="studentlife.html#publication">Blog/Research</a></li>
+                    <li><a href="studentlife.html#mail">Mail</a></li>
+                    <li><a href="studentlife.html#my-nu">My NU</a></li>
+                    <li><a href="studentlife.html#calendar">Calendar</a></li>
+                </ul>
+                <div class="lang-switcher" onclick="alert('Language switching functionality will be connected to your backend translation system.')">
+                    <span class="active">EN</span>
+                    <span style="color: rgba(255,255,255,0.3);">|</span>
+                    <span>KH</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="https://www.norton-u.com/images/logo-banner-blue.png" alt="Norton University">
+                    </a>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="about.html" style="color: var(--primary);">About us ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="about.html#why-nu">Why NU?</a>
+                            <a href="about.html#campus">Campus</a>
+                            <a href="about.html#library-facility">Library and Facility</a>
+                            <a href="about.html#government-recognition">Government Recognition</a>
+                            <a href="about.html#mission-vision">Mission Vision and Goal</a>
+                            <a href="about.html#rector-message">Message Of Vice Rector</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="academics.html" style="">Academics ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="academics.html#foundation">Foundation Studies</a>
+                            <a href="academics.html#cs">College of Sciences</a>
+                            <a href="academics.html#social-sciences">College of Social Sciences</a>
+                            <a href="academics.html#cahl">Arts, Humanities</a>
+                            <a href="academics.html#fhs">Faculty of Health</a>
+                            <a href="academics.html#nugs">Graduate School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="admissions.html" style="">Admissions ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="admissions.html#under-graduate">Under Graduate</a>
+                            <a href="admissions.html#admission-graduate">Graduate School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="collaborations.html" style="">Collaborations ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="collaborations.html#mou">MOU</a>
+                            <a href="collaborations.html#governing-council">Governing Council</a>
+                            <a href="collaborations.html#aupf">AUPF</a>
+                        </div>
+                    </li>
+                    <li><a href="studentlife.html#publication" class="nav-item" style="">Research</a></li>
+                </ul>
+                <button class="btn btn-primary" style="padding: 0.6rem 1.5rem;">Apply Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1 class="section-title" style="background: none; -webkit-text-fill-color: white; color: white;">About Us</h1>
+        <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem;">Learn about our rich history and commitment to excellence.</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container page-content">
+        <!-- Sidebar Navigation -->
+        <aside>
+            <div class="sidebar-nav" id="sidebarNav">
+                <a href="#why-nu" class="tab-link active" data-target="why-nu">Why NU?</a>
+<a href="#campus" class="tab-link " data-target="campus">Campus</a>
+<a href="#library-facility" class="tab-link " data-target="library-facility">Library and Facility</a>
+<a href="#government-recognition" class="tab-link " data-target="government-recognition">Government Recognition</a>
+<a href="#mission-vision" class="tab-link " data-target="mission-vision">Mission Vision and Goal</a>
+<a href="#rector-message" class="tab-link " data-target="rector-message">Message Of Vice Rector</a>
+<a href="#contact-us" class="tab-link " data-target="contact-us">Contact Us</a>
+
+            </div>
+        </aside>
+
+        <!-- Article Bodies -->
+        <div>
+            
+        <article class="content-body tab-content active" id="content-why-nu" style="display: block;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Why NU?</h2>
+            <figure ><img src="https://cdn.norton-u.com/nu/public_file/images/about.jpg"></figure><p style="text-align:justify;">Norton University is the first private university in Cambodia, established on December 2, 1996 by Professor Chan Sok Khieng. It started to offer classes in December 1996 and was recognized as a university by sub-decree on September 18, 1997. The institution was formally inaugurated in a ceremony on February 28, 1997 attended by Samdech Hun Sen, Prime Minister of the Royal Kingdom of Cambodia A further sub-decree, No. 47 by the Royal Government of Cambodia, dated of July 25, 2000 approved its reformation, giving it the “rights and privileges” to “open faculties, departments, and conduct postgraduate degree courses or any professional courses as required for the society and the country”. The Graduate School started in 2001 in affiliation with the Ateneo de Zamboanga University of the Philippines. The diplomas for the first two MBA classes were signed by the President of Norton University and the Ateneo de Zamboanga University respectively. In 2001 NU awarded its first Bachelor's Degrees to 453 graduates of Business, Economics, Law and Computer Science.</p>
+        </article>
+
+        <article class="content-body tab-content " id="content-campus" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Campus</h2>
+            <figure ><img src="https://cdn.norton-u.com/nu/public_file/images/about/new%20campus.jpg"></figure><p>The campus in the downtown part of Phnom Penh consists of five buildings with 92 rooms, including 67 classrooms (19 rooms equipped with LCD), and 25 offices. The physical plant greatly enlarged when the purpose-built building in the new campus in Chroy Changva peninsula became operational. <br>     The 5-story building that has an area of close to 20,000 sq.m and is designed along classic Khmer architectural lines. It has offices and the library on the ground floor and classrooms and laboratories in the upper floors. The rooms' windows provide a panoramic view of the surroundings and are fed by soothing breezes.</p>
+        </article>
+
+        <article class="content-body tab-content " id="content-library-facility" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Library and Facility</h2>
+            <h4>Physical Plan </h4><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/about/building.jpg"></figure><p>     The campus in the downtown part of Phnom Penh consists of five buildings with 92 rooms, including 67 classrooms (19 rooms equipped with LCD), and 25 offices. The physical plant greatly enlarged when the purpose-built building in the new campus in Chroy Changva peninsula became operational. <br>     The 5-story building that has an area of close to 20,000 sq.m and is designed along classic Khmer architectural lines. It has offices and the library on the ground floor and classrooms and laboratories in the upper floors. The rooms' windows provide a panoramic view of the surroundings and are fed by soothing breezes.</p><h4>Bookshop </h4><p>The University bookshop sells textbooks, school supplies, newspapers, sports equipment, University memorabilia and similar items. It is located in front of the Information and Registration Office. <br> </p><h4>Library </h4><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/about/library.jpg"></figure><p>Norton maintains libraries with collections of books of latest editions from various authors. These are either sources from the University's funds or donated by various organizations and individuals. These books are accessible for all students, academic and non- academic staff as well as to the public. The main library is equipped with computers, internet-wifi, conference TV,  audio players and headphones. All students have access to these facilities during working hours.</p><h4>Laboratories </h4><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/about/computer.jpg"></figure><p>    The computer labs at Norton are equipped with the latest in computer technology to ensure that our students are given the best. The computers are connected to the Internet for students and staffs to use. In addition, the University also has a special engineering, electronic, and architecture laboratory for the students. The laboratories boost of the most modern and specialized equipments, which were bought from abroad. <br>    The language labs located on the ground floor of building B which was established for students who have chosen to specialize in the English language. However, students from other majors may also have access to it. This well equipped labs had computers with Internet connections, cassette players, handsets, television, overhead projector, VCR, DVD player, amplifier, etc. Furthermore, both students and lecturers can borrow books or DVD from the librarian. </p><h4>Computer Capability </h4><p>   The university has a highly developed computer capability. Its computer units are regularly upgraded to the latest models and are networked and have access to the Internet. Computers with Internet access are also available in strategic areas for use free of charge by the students. The University maintains several laboratories for instructional use.</p><h4>Canteen </h4><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/about/canteen.jpg"></figure><p>    Anywhere you go in the Phnom Penh area, you're never far away from a place to eat, and Norton campus is no exception. The canteen of Norton is located on the ground floor of building B. In addition, numerous restaurants and food stalls, serving Khmer, Chinese, or Europe dishes of every range in price and variety, are located in the area surrounding the university.</p>
+        </article>
+
+        <article class="content-body tab-content " id="content-government-recognition" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Government Recognition</h2>
+            <p><img  src="https://cdn.norton-u.com/nu/public_file/images/recognition.jpg">Norton University was formally founded as a university by sub-decree on September 18, 1997 and a further sub-decree of July 25, 2000 approved its reformation, giving it the “right and privileges” to open faculties, departments, and conduct postgraduate and doctoral degree courses or any professional courses as required by the society and the country. On July 25, 2000, the Norton University diplomas (degrees) were also accredited by the Ministry of Education. <br>On August 31, 2007 our Foundation Year Course received full accredita­tion from ACC, allowing NU to issue certificates to students who successfully completed Foundation Year Course in 2006-2007, 2007­-2008, 2008-2009, and the following academic years. The ACC is a governmental institution under the authority of the Council of Ministers. The main objective of this institution is to promote the quality of higher education in Cambodia.</p>
+        </article>
+
+        <article class="content-body tab-content " id="content-mission-vision" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Mission Vision and Goal</h2>
+            <figure ><img style="aspect-ratio:1366/362;" src="https://cdn.norton-u.com/nu/February-2025/img-8808jpg1740045658.webp" width="1366" height="362"></figure><h2>អំពីសាកលវិទ្យាល័យ</h2><p>ន័រតុន គឺជាសាកលវិទ្យាល័យឯកជនដំបូងគេបំផុតនៅក្នុង ព្រះរាជាណាចក្រកម្ពុជា។ សាកលវិទ្យាល័យនេះ បានចាប់បដិសន្ធិឡើងដើម្បី ចូលរួមជាមួយរាជរដ្ឋាភិបាល ក្នុងការផ្តល់ នូវការបណ្តុះបណ្តាល ថ្នាក់ឧត្តមសិក្សាដល់សិស្ស និស្សិត ដែលមាន សមត្ថភាព និងមានបំណងពង្រីកចំណេះដឹងរបស់ខ្លួន។ ន័រតុន ផ្តល់នូវការបណ្តុះបណ្តាលឧត្តមសិក្សាមួយ សម្រាប់ទាំងអស់គ្នា ដោយមិន ប្រកាន់ ជាតិសាសន៍ ឋានៈ ពណ៌សម្បុរឡើយ។</p><h2>ចក្ខុវិស័យ</h2><p>សាកលវិទ្យាល័យន័រតុនមានគោលបំណងក្លាយជាសាកលវិទ្យាល័យមួយ​ ដែល​ទទួលស្គាល់ជាអន្តរជាតិក្នុងការបណ្តុះបណ្តាលអ្នកអាជីពប្រកប ដោយឧត្តម​ភាព ផលិតភាពនិងចូលរួមចំណែកជួយសង្គម និងសេដ្ឋកិច្ច នៃប្រទេសកម្ពុជាព្រមទាំង សហគមន៍អន្តរជាតិ។​​  </p><h2>បេសកកម្ម</h2><p>សាកលវិទ្យាល័យន័រតុនមានទិសដៅបណ្តុះបណ្តាលនិស្សិតដែលអាចក្លាយជា៖<br>១. អ្នកមានអាកប្បកិរិយា និងស្មារតី សហគ្រិនប្រកបដោយចក្ខុវិស័យ​<br>២.អ្នកអាជីពប្រកបដោយឧត្តមភាពដែលអាចឆ្លើយតបរាល់បញ្ហាប្រឈមនានា<br>៣.អ្នកមានគំនិតច្នៃប្រឌិតនិងសមត្ថភាពគ្រប់គ្រាន់ក្នុងការសិក្សាស្រាវជ្រាវ<br>៤. អ្នកអោយតម្លៃខ្ពស់លើការសិក្សារៀនសូត្រ និងមានស្មារតីប្រកបដោយ សុភវិនិច្ឆ័យ។<br>៥. អ្នកបណ្តុះ និងផ្សព្វផ្សាយនូវសន្តិភាព យុត្តិធម៌ និងការអភិវឌ្ឍន៍។ </p><p>ដើម្បីសម្រេចនូវបេសកកម្មខាងលើសាកលវិទ្យាល័យន័រតុនប្តេជ្ញាចិត្តចំពោះ ៖<br><strong>​និស្សិត៖</strong> តាមរយៈការផ្តល់សេវាអប់រំដែលមានគុណភាពខ្ពស់ដោយជំរុញ ការស្រាវជ្រាវ និងការសិក្សាឯករាជ្យជាមូលដ្ឋាន។<br><strong>​​បុគ្គលិក៖</strong> តាមរយៈការផ្តល់នូវការអភិវឌ្ឍន៍បុគ្គលនិងការបណ្តុះបណ្តាល ទាំងគ្រូ និងបុគ្គលិក។<br><strong>ប្រទេសជាតិ៖</strong> តាមរយៈការលើកស្ទួយនូវ ប្រពៃណី វប្បធម៌ខ្មែរ សន្តិភាព យុត្តិធម៌ និងពង្រឹងផលប្រយេាជន៍នៃសហគមន៍ជាតិ និងអន្តរជាតិ។ </p><blockquote><h2>ន័រតុន ! សាកលវិទ្យាល័យខ្ញុំ !</h2></blockquote><h2>The University</h2><p>Norton University is the oldest private university of Cambodia. It was established to complement the government in providing higher learning to a growing number of qualified people who are eager to advance their knowledge.</p><p>We envision that Norton University would become a Center of Higher Learning that would be open to all, regardless of beliefs,  national origin, or social background. </p><h2>Vision</h2><p>Norton University aspires to be an internationally respected university producing competitive professionals, who will contrib­ute to the social and economic well-being of Cambodia and to the international community. </p><h2>Mission</h2><p>Norton University aims to produce graduates : <br>1. Who have an entrepreneurial spirit. <br>2. Who have a profes­sional and competitive attitude, ready to face future challenges.<br>3. Who are creative and independent thinkers, able to engage in research. <br>4. Who value  higher learning and possess a spirit of inquiry. <br>5. Who pursue  peace, justice and development. </p><p>In order to produce such graduates, Norton University commits itself to: <br><strong>The Students:</strong>    by continuously providing high quality academic services, research independent learning. <br><strong>The Staff:</strong> by promoting their personal and academic development. <br><strong>The Nation</strong>: by supporting traditional Khmer culture, peace, justice, and reinforcing benefits of local and international ​community.</p><blockquote><h2>NORTON ! MY UNIVERSITY !</h2></blockquote><figure ><img style="aspect-ratio:1366/835;" src="https://cdn.norton-u.com/nu/February-2025/a9r18m0zcb-xjsz1u-8582jpg1740045714.webp" width="1366" height="835"></figure>
+        </article>
+
+        <article class="content-body tab-content " id="content-rector-message" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Message Of Vice Rector</h2>
+            <figure  style="width:35%;"><img style="aspect-ratio:1080/1537;" src="https://cdn.norton-u.com/nu/September-2024/vice-rector2png1715131869webp1726621378.webp" width="1080" height="1537"></figure><p style="text-align:justify;">Congratulations on your decision to enroll with Norton University.  As one of the oldest private university in Cambodia, Norton University offers excellent facilities, real life-experienced lecturers, and a complex system of higher education to prepare students to developing their skills and knowledge to a challenging future as Cambodia integrates itself into the market of regionalization as well as globalization. First begun in 1996, Norton University has enjoyed a long tradition of successes in grooming policy makers, civic leaders, and business leaders who had advanced their higher education at our university and had worked throughout the region and the world. At Norton University, students can study majors through a rigorous series of courses and examination.  Students also attend the seminars that focus on the broader educational spectrum to further enhancing their knowledge.  Norton University holds itself to the highest quality of education. Therefore, we recruit the best, most diverse and innovative lecturers and staffs from around the world, encouraging a vibrant intellectual community for our students to build and secure their future.  In addition, Norton University organizes regular seminars, presented by skillful and expert guests from the prestigious universities to strengthen the capacity of our lecturers and staffs – thus ensuring academic excellence for our students.  The purpose of this newsletter is to provide students with the informational sources recated to their study and society.<br>    Welcome to the Norton University. We look forward to being a part of your professional development.</p><p style="text-align:justify;"><strong>Dr. Ung Vannthoeun</strong></p>
+        </article>
+
+        <article class="content-body tab-content " id="content-contact-us" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Contact Us</h2>
+            
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: start;">
+        <!-- Contact Info & Form -->
+        <div style="background: var(--surface-color); padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid rgba(0,0,0,0.06); box-shadow: var(--shadow-sm);">
+            <h3 style="margin-bottom: 1rem; color: var(--primary-dark); font-size: 1.5rem;">Get In Touch</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Have questions about admissions, programs, or campus life? Send us a message and our team will respond shortly.</p>
+            
+            <div style="margin-bottom: 2rem; line-height: 1.8;">
+                <p style="margin-bottom: 0.5rem; color: var(--text-secondary);"><strong>📍 Address:</strong> St. Keo Chenda, Sangkat Chroy Changvar, Phnom Penh</p>
+                <p style="margin-bottom: 0.5rem; color: var(--text-secondary);"><strong>📞 Phone:</strong> +855 23 432 098</p>
+                <p style="margin-bottom: 0.5rem; color: var(--text-secondary);"><strong>✉️ Email:</strong> info@norton-u.com</p>
+            </div>
+
+            <form style="display: flex; flex-direction: column; gap: 1rem;">
+                <input type="text" placeholder="Your Name" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: var(--radius-md); font-family: inherit; width: 100%; outline: none;">
+                <input type="email" placeholder="Your Email Address" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: var(--radius-md); font-family: inherit; width: 100%; outline: none;">
+                <textarea placeholder="How can we help you?" rows="4" style="padding: 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: var(--radius-md); font-family: inherit; width: 100%; resize: vertical; outline: none;"></textarea>
+                <button type="button" class="btn btn-primary" onclick="alert('Message sent successfully!')" style="padding: 1rem; margin-top: 0.5rem; border: none; cursor: pointer; font-family: inherit; font-size: 1rem;">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Google Map -->
+        <div style="height: 100%; min-height: 400px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.5724813098586!2d104.92723701534604!3d11.583091991775027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109516629c1eab1%3A0x6b0fb1604a39b8bc!2sNorton%20University!5e0!3m2!1sen!2skh!4v1689000000000!5m2!1sen!2skh" width="100%" height="100%" style="border:0; border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); min-height: 600px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+        </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 Norton University. All rights reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="index.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if(mobileToggle) {
+            mobileToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.nav-item.has-dropdown > a').forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) { e.preventDefault(); toggle.parentElement.classList.toggle('active'); }
+            });
+        });
+
+        // Tab Switching Logic
+        function switchTab(targetId) {
+            // Update sidebar active state
+            document.querySelectorAll('.tab-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-target') === targetId) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Update content display
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.style.display = 'none';
+                content.classList.remove('active');
+            });
+            const targetContent = document.getElementById('content-' + targetId);
+            if (targetContent) {
+                targetContent.style.display = 'block';
+                // small delay to trigger animation
+                setTimeout(() => targetContent.classList.add('active'), 10);
+            }
+        }
+
+        // Handle clicks
+        document.getElementById('sidebarNav').addEventListener('click', (e) => {
+            if (e.target.classList.contains('tab-link')) {
+                const targetId = e.target.getAttribute('data-target');
+                switchTab(targetId);
+            }
+        });
+
+        // Handle direct URL hashes on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) {
+                switchTab(hash);
+                // Scroll to top of content
+                setTimeout(() => window.scrollTo(0, 0), 100);
+            }
+        });
+        
+        // Handle hash changes (e.g. from top nav)
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) { switchTab(hash); }
+        });
+    </script>
+</body>
+</html>

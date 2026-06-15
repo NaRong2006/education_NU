@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborations | Norton University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header { background-color: var(--primary-dark); color: white; padding: 10rem 2rem 4rem; text-align: center; }
+        .page-content { display: grid; grid-template-columns: 280px 1fr; gap: 4rem; margin-top: 4rem; margin-bottom: 4rem; }
+        .sidebar-nav { background: var(--surface-color); border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.08); overflow: hidden; position: sticky; top: 100px; }
+        .sidebar-nav a { display: block; padding: 1rem 1.5rem; color: var(--text-secondary); font-weight: 500; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .sidebar-nav a:hover, .sidebar-nav a.active { background: var(--primary); color: white; }
+        .content-body img { border-radius: var(--radius-xl); margin-bottom: 2rem; box-shadow: var(--shadow-md); width: 100%; max-height: 500px; object-fit: cover; }
+        .content-body p, .content-body li { font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; }
+        .content-body ul { margin-left: 2rem; margin-bottom: 1.5rem; list-style-type: disc; }
+        .tab-content { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 900px) { .page-content { grid-template-columns: 1fr; } .sidebar-nav { position: static; } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-wrapper">
+        <div class="top-bar">
+            <div class="container" style="display: flex; justify-content: flex-end; align-items: center; gap: 2rem;">
+                <ul class="top-bar-links" style="margin-left: auto;">
+                    <li><a href="studentlife.html#student-services">Student's services</a></li>
+                    <li><a href="studentlife.html#staff">Staff</a></li>
+                    <li><a href="studentlife.html#publication">Blog/Research</a></li>
+                    <li><a href="studentlife.html#mail">Mail</a></li>
+                    <li><a href="studentlife.html#my-nu">My NU</a></li>
+                    <li><a href="studentlife.html#calendar">Calendar</a></li>
+                </ul>
+                <div class="lang-switcher" onclick="alert('Language switching functionality will be connected to your backend translation system.')">
+                    <span class="active">EN</span>
+                    <span style="color: rgba(255,255,255,0.3);">|</span>
+                    <span>KH</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="https://www.norton-u.com/images/logo-banner-blue.png" alt="Norton University">
+                    </a>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="about.html" style="">About us ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="about.html#why-nu">Why NU?</a>
+                            <a href="about.html#campus">Campus</a>
+                            <a href="about.html#library-facility">Library and Facility</a>
+                            <a href="about.html#government-recognition">Government Recognition</a>
+                            <a href="about.html#mission-vision">Mission Vision and Goal</a>
+                            <a href="about.html#rector-message">Message Of Vice Rector</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="academics.html" style="">Academics ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="academics.html#foundation">Foundation Studies</a>
+                            <a href="academics.html#cs">College of Sciences</a>
+                            <a href="academics.html#social-sciences">College of Social Sciences</a>
+                            <a href="academics.html#cahl">Arts, Humanities</a>
+                            <a href="academics.html#fhs">Faculty of Health</a>
+                            <a href="academics.html#nugs">Graduate School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="admissions.html" style="">Admissions ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="admissions.html#under-graduate">Under Graduate</a>
+                            <a href="admissions.html#admission-graduate">Graduate School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="collaborations.html" style="color: var(--primary);">Collaborations ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="collaborations.html#mou">MOU</a>
+                            <a href="collaborations.html#governing-council">Governing Council</a>
+                            <a href="collaborations.html#aupf">AUPF</a>
+                        </div>
+                    </li>
+                    <li><a href="studentlife.html#publication" class="nav-item" style="">Research</a></li>
+                </ul>
+                <button class="btn btn-primary" style="padding: 0.6rem 1.5rem;">Apply Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1 class="section-title" style="background: none; -webkit-text-fill-color: white; color: white;">Collaborations</h1>
+        <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem;">Our global partnerships and networks.</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container page-content">
+        <!-- Sidebar Navigation -->
+        <aside>
+            <div class="sidebar-nav" id="sidebarNav">
+                <a href="#mou" class="tab-link active" data-target="mou">MOU</a>
+<a href="#governing-council" class="tab-link " data-target="governing-council">Governing Council</a>
+<a href="#aupf" class="tab-link " data-target="aupf">AUPF</a>
+
+            </div>
+        </aside>
+
+        <!-- Article Bodies -->
+        <div>
+            
+        <article class="content-body tab-content active" id="content-mou" style="display: block;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">MOU</h2>
+            <figure  style="width:100%;"><table style="border-color:hsl(0, 0%, 100%);border-style:solid;"><tbody><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Yangzhou_University_China.jpg"><figcaption><span >Yangzhou University China</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/VIT_University_India.jpg"><figcaption><span >VIT University, India</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/University_Tunku_Abdul_Rahman_Malaysia.jpg"><figcaption><span >University Tunku Abdul Rahman, Malaysia</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/University_of_Cambridge_UK.jpg"><figcaption><span >University of Cambridge, UK</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Universiti_Technologi_Malaysia_Malaysia.jpg"><figcaption><span >Universiti Teknologi Malaysia</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Universiti_Malaysia_Perlis_Malaysia.jpg"><figcaption><span >Universiti Malaysia Perlis, Malaysia</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Universitas_Tarumanagara_Indonesia.jpg"><figcaption><span >Universitas Tarumanagara, Indonesia</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Universitas_Negeri_Jakarta_Indonesia.jpg"><figcaption><span >Universitas Negeri Jakarta, Indonesia</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Universitas_Gorontalo_Indonesia.jpg"><figcaption><span >Universitas Gorontalo, Indonesia</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Swami_Ramanand_Teerth_Marathwada_University_Nanded_India.jpg"><figcaption><span >Swami Ramanand Teerth Marathwada University, Nanded, India</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Sichuan_University_China.jpg"><figcaption><span >Sichuan University, China</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Siam_University_Thailand.jpg"><figcaption><span >Siam University, Thailand</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Providence_University_Taiwan.jpg"><figcaption><span >Providence University, Taiwan</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Pai_Chai_University_Korea.jpg"><figcaption><span >Pai Chai University, Korea</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Northumbria_University_England.jpg"><figcaption><span >Northumbria University England</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Kansai_University_of_International_Studies_Japan.jpg"><figcaption><span >Kansai University of International Studies, Japan</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Gyeongju_National_University_Korea.jpg"><figcaption><span >Gyeongju National University, Korea</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Guangdong_University_of%20_Foreign_Studies_China.jpg"><figcaption><span >Guangdong University of Foreign Studies, China</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Galilee_Institute_Israel.jpg"><figcaption><span >Galilee Institute, Israel</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Dongseo_University_Korea.jpg"><figcaption><span >Dongseo University, Korea</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/De_La_Salle_University_Lipa_Philippines.jpg"><figcaption><span >De La Salle University, Lipa, Philippines</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Christian_University_Thailand.jpg"><figcaption><span >Christian University, Thailand</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Ateneo_De_Zambonga_University_Philippines.jpg"><figcaption><span >Ateneo De Zambonga University, Philippines</span></figcaption></figure></td><td style="border-color:hsl(0, 0%, 100%);border-style:solid;"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Assumption_University_Thailand.jpg"><figcaption><span >Assumption University, Thailand</span></figcaption></figure></td></tr><tr><td style="border-color:hsl(0, 0%, 100%);border-style:solid;" colspan="2"><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/MOU/Active_Peoples_Microfinance_Institution_Lfd.jpg"><figcaption><span >Active People's Microfinance Institution Lfd</span></figcaption></figure></td></tr></tbody></table></figure><p> </p>
+        </article>
+
+        <article class="content-body tab-content " id="content-governing-council" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Governing Council</h2>
+            <figure ><img src="https://cdn.norton-u.com/nu/public_file/images/Governing/13th_GCM_2011_G111_Rm_Main_Building_NU_New_Campus.JPG"><figcaption><span >13th GCM 2011, G111 Rm, Main Building, NU, New Campus</span></figcaption></figure><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/Governing/12th_GCM_2010_G111_Rm_Main_Building_NU_New_Campus.JPG"><figcaption><span >12th GCM 2010, G111 Rm, Main Building NU, New Campus</span></figcaption></figure><p> </p><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/Governing/11th_GCM_2009_Sunway_Hotel_Phnom_Penh_Cambodia.JPG" alt="..."><figcaption><span >11th GCM 2009, Sunway Hotel, Phnom Penh, Cambodia</span></figcaption></figure><p> </p><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/Governing/10th_GCM_2008_AS1_Rm_NU_Old_Campus.JPG" alt="..."><figcaption><span >10th GCM 2008, AS1 Rm, NU, Old Campus</span></figcaption></figure><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/Governing/9th_GCM_2007_AS1_Rm_NU_Old_Campus.JPG" alt="..."><figcaption><span >9th GCM 2007, AS1 Rm, NU, Old Campus</span></figcaption></figure>
+        </article>
+
+        <article class="content-body tab-content " id="content-aupf" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">AUPF</h2>
+            <figure ><img src="https://cdn.norton-u.com/nu/public_file/images/AUPF/10th_AUPF_2011_VIT_India.jpg"><figcaption><span >10th AUPF 2011, VIT, India</span></figcaption></figure><p> </p><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/AUPF/9th_AUPF_2010_Norton_University_Cambodia.jpg"><figcaption><span >9th AUPF 2010, Norton University, Cambodia</span></figcaption></figure><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/AUPF/8th_AUPF_2009_Universitas_Negan_Jakarta_Indonesia.jpg"><figcaption><span >8th AUPF 2009, Universitas Negan Jakarta, Indonesia</span></figcaption></figure><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/AUPF/7th_AUPF_2008_Anhui_University_China.jpg"><figcaption><span >7th AUPF 2008, Anhui University, China</span></figcaption></figure><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/AUPF/6th_AUPF_2007_Providence_University_Taiwan.jpg"><figcaption><span >6th AUPF 2007, Providence University, Taiwan</span></figcaption></figure><figure ><img src="https://cdn.norton-u.com/nu/public_file/images/AUPF/5th_AUPF_2006_Bangkok_University_Thailand.jpg"><figcaption><span >5th AUPF 2006, Bangkok University, Thailand</span></figcaption></figure>
+        </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 Norton University. All rights reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="index.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if(mobileToggle) {
+            mobileToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.nav-item.has-dropdown > a').forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) { e.preventDefault(); toggle.parentElement.classList.toggle('active'); }
+            });
+        });
+
+        // Tab Switching Logic
+        function switchTab(targetId) {
+            // Update sidebar active state
+            document.querySelectorAll('.tab-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-target') === targetId) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Update content display
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.style.display = 'none';
+                content.classList.remove('active');
+            });
+            const targetContent = document.getElementById('content-' + targetId);
+            if (targetContent) {
+                targetContent.style.display = 'block';
+                // small delay to trigger animation
+                setTimeout(() => targetContent.classList.add('active'), 10);
+            }
+        }
+
+        // Handle clicks
+        document.getElementById('sidebarNav').addEventListener('click', (e) => {
+            if (e.target.classList.contains('tab-link')) {
+                const targetId = e.target.getAttribute('data-target');
+                switchTab(targetId);
+            }
+        });
+
+        // Handle direct URL hashes on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) {
+                switchTab(hash);
+                // Scroll to top of content
+                setTimeout(() => window.scrollTo(0, 0), 100);
+            }
+        });
+        
+        // Handle hash changes (e.g. from top nav)
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) { switchTab(hash); }
+        });
+    </script>
+</body>
+</html>

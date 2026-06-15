@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Norton University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header { background-color: var(--primary-dark); color: white; padding: 10rem 2rem 4rem; text-align: center; }
+        .page-content { display: grid; grid-template-columns: 280px 1fr; gap: 4rem; margin-top: 4rem; margin-bottom: 4rem; }
+        .sidebar-nav { background: var(--surface-color); border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.08); overflow: hidden; position: sticky; top: 100px; }
+        .sidebar-nav a { display: block; padding: 1rem 1.5rem; color: var(--text-secondary); font-weight: 500; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .sidebar-nav a:hover, .sidebar-nav a.active { background: var(--primary); color: white; }
+        .content-body img { border-radius: var(--radius-xl); margin-bottom: 2rem; box-shadow: var(--shadow-md); width: 100%; max-height: 500px; object-fit: cover; }
+        .content-body p, .content-body li { font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; text-align: justify; }
+        .content-body ul { margin-left: 2rem; margin-bottom: 1.5rem; list-style-type: disc; }
+        .tab-content { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 900px) { .page-content { grid-template-columns: 1fr; } .sidebar-nav { position: static; } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-wrapper">
+        <div class="top-bar">
+            <div class="container" style="display: flex; justify-content: flex-end; align-items: center; gap: 2rem;">
+                <ul class="top-bar-links" style="margin-left: auto;">
+                    <li><a href="studentlife.html#student-services">Student's services</a></li>
+                    <li><a href="studentlife.html#staff">Staff</a></li>
+                    <li><a href="studentlife.html#publication">Blog/Research</a></li>
+                    <li><a href="studentlife.html#mail">Mail</a></li>
+                    <li><a href="studentlife.html#my-nu">My NU</a></li>
+                    <li><a href="studentlife.html#calendar">Calendar</a></li>
+                </ul>
+                <div class="lang-switcher" onclick="alert('Language switching functionality will be connected to your backend translation system.')">
+                    <span class="active">EN</span>
+                    <span style="color: rgba(255,255,255,0.3);">|</span>
+                    <span>KH</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="https://www.norton-u.com/images/logo-banner-blue.png" alt="Norton University">
+                    </a>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="about.html" style="">About us ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="about.html#why-nu">Why NU?</a>
+                            <a href="about.html#campus">Campus</a>
+                            <a href="about.html#library-facility">Library and Facility</a>
+                            <a href="about.html#government-recognition">Government Recognition</a>
+                            <a href="about.html#mission-vision">Mission Vision and Goal</a>
+                            <a href="about.html#rector-message">Message Of Vice Rector</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="academics.html" style="">Academics ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="academics.html#foundation">Foundation Studies</a>
+                            <a href="academics.html#cs">College of Sciences</a>
+                            <a href="academics.html#social-sciences">College of Social Sciences</a>
+                            <a href="academics.html#cahl">Arts, Humanities</a>
+                            <a href="academics.html#fhs">Faculty of Health</a>
+                            <a href="academics.html#nugs">Graduate School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="admissions.html" style="color: var(--primary);">Admissions ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="admissions.html#under-graduate">Under Graduate</a>
+                            <a href="admissions.html#admission-graduate">Graduate School</a>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="collaborations.html" style="">Collaborations ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="collaborations.html#mou">MOU</a>
+                            <a href="collaborations.html#governing-council">Governing Council</a>
+                            <a href="collaborations.html#aupf">AUPF</a>
+                        </div>
+                    </li>
+                    <li><a href="studentlife.html#publication" class="nav-item" style="">Research</a></li>
+                </ul>
+                <button class="btn btn-primary" style="padding: 0.6rem 1.5rem;">Apply Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1 class="section-title" style="background: none; -webkit-text-fill-color: white; color: white;">Admissions</h1>
+        <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem;">Join the Norton University community.</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container page-content">
+        <!-- Sidebar Navigation -->
+        <aside>
+            <div class="sidebar-nav" id="sidebarNav">
+                <a href="#under-graduate" class="tab-link active" data-target="under-graduate">Under Graduate</a>
+<a href="#admission-graduate" class="tab-link " data-target="admission-graduate">Graduate School Admissions</a>
+
+            </div>
+        </aside>
+
+        <!-- Article Bodies -->
+        <div>
+            
+        <article class="content-body tab-content active" id="content-under-graduate" style="display: block;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Under Graduate</h2>
+            <h2>REGULATION ON ENROLMENT</h2><h3><strong>Admission </strong></h3><p>Enrolment of year I (Foundation Studies) shall be made only when students have High School Certificate (GCE) or equivalent certificate/document. </p><p>Graduate students shall have a bachelor's degree or equivalent degree. </p><p>Students shall take the entrance exam or any requirements set by Norton University. </p><p>Students holding degrees or other certificates from other Educational Institutions and wishing to pursue their studies in the second year or third year at Norton University shall go through an evaluation process conduct by the Norton University Academic. Board and duly approve by the Ministry of Education, Youth, and Sports. </p><p>All students shall pay tuition fees to Norton University before the next academic year starts and the fees is nonrefundable.</p><h2>ADMISSION REQUIREMENTS</h2><h3>For Local Students </h3><p>1. Original copy of BACC II (G12 National Examination Certificate). </p><p>2. Four (4) copies of 4cm x 6 cm photos. </p><p>3. Complete Application Form and Registration Fee. </p><p>4. Entrance Test </p><p>5. High School Transcript </p><h3>For Foreign Students </h3><p>1. Original High School Diploma (with English translation, if not written in English language) </p><p>2. Original Alien Certificate of Registration (ACR) issued by the Ministry of Foreign Affairs or passport. </p><p>3. Personal History Statement. </p><p>4. Complete application form and admission fee (USD 15.00) </p><p>5. Six (6) copies 4x6 photos </p><p>6. Transcript of records (with English translation) </p><p>7. A “Passing Mark” in the English language test (in case of poor English language comprehension, the student shall be required to enroll at Norton's Language Institute for special English class) </p><p>8. Medical health certificate with standard size chest X-ray</p>
+        </article>
+
+        <article class="content-body tab-content " id="content-admission-graduate" style="display: none;">
+            <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 1.5rem;">Graduate School Admissions</h2>
+            <h2>General Admission Requirements </h2><p><strong>The applicant should: </strong><br>1. Hold a Bachelor's degree in a related field of study from an institution recognized by the government of the country in which the institution is located <br>2. Be proficient in English <br>3. Have at least two years related working experience <br>4. Pass the written and oral examinations conducted by the Graduate School </p><h2>Application Documents </h2><p><strong>The following items must be submitted on the date of application: </strong><br>1. A completed application form <br>2. An authenticated copy of the Transcript of record <br>3.Two copies of 3x4cm photographs with any background <br>4.One copy of 4x6cm photograph with any background </p>
+        </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 Norton University. All rights reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="index.html">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        if(mobileToggle) {
+            mobileToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.nav-item.has-dropdown > a').forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) { e.preventDefault(); toggle.parentElement.classList.toggle('active'); }
+            });
+        });
+
+        // Tab Switching Logic
+        function switchTab(targetId) {
+            // Update sidebar active state
+            document.querySelectorAll('.tab-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-target') === targetId) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Update content display
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.style.display = 'none';
+                content.classList.remove('active');
+            });
+            const targetContent = document.getElementById('content-' + targetId);
+            if (targetContent) {
+                targetContent.style.display = 'block';
+                // small delay to trigger animation
+                setTimeout(() => targetContent.classList.add('active'), 10);
+            }
+        }
+
+        // Handle clicks
+        document.getElementById('sidebarNav').addEventListener('click', (e) => {
+            if (e.target.classList.contains('tab-link')) {
+                const targetId = e.target.getAttribute('data-target');
+                switchTab(targetId);
+            }
+        });
+
+        // Handle direct URL hashes on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) {
+                switchTab(hash);
+                // Scroll to top of content
+                setTimeout(() => window.scrollTo(0, 0), 100);
+            }
+        });
+        
+        // Handle hash changes (e.g. from top nav)
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) { switchTab(hash); }
+        });
+    </script>
+</body>
+</html>
