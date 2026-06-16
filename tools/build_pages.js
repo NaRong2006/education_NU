@@ -125,8 +125,9 @@ function generateHTML(category, info, items) {
                         </div>
                     </li>
                     <li><a href="studentlife.html#publication" class="nav-item" style="${category === 'studentlife' ? 'color: var(--primary);' : ''}">Research</a></li>
+                    <li class="mobile-only-cta"><a href="admissions.html#under-graduate" class="btn btn-primary" style="width: 100%; justify-content: center;">Apply Now</a></li>
                 </ul>
-                <button class="btn btn-primary" style="padding: 0.6rem 1.5rem;">Apply Now</button>
+                <a href="admissions.html#under-graduate" class="btn btn-primary nav-cta" style="padding: 0.6rem 1.5rem;">Apply Now</a>
             </div>
         </nav>
     </header>
@@ -223,6 +224,7 @@ function generateHTML(category, info, items) {
             const hash = window.location.hash.replace('#', '');
             if (hash) { switchTab(hash); }
         });
+
     </script>
 </body>
 </html>`;
