@@ -358,12 +358,17 @@ img {
     text-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
 /* -----------------------------------------------------
    Academics Showcase (Tabbed/Card Flow)
 ------------------------------------------------------ */
 .academic-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: 2rem;
 }
 
@@ -493,7 +498,7 @@ img {
 ------------------------------------------------------ */
 .editorial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
     gap: 2.5rem;
 }
 
@@ -740,12 +745,32 @@ img {
         display: flex;
     }
 
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
     .hero {
         margin-top: 80px;
+        padding: 0 1.25rem;
     }
 
     .hero-title {
         font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
     }
 
     .bento-grid {
@@ -757,9 +782,28 @@ img {
         grid-row: auto;
     }
 
+    .bento-item {
+        padding: 1.5rem;
+    }
+
+    .stat-huge {
+        font-size: 3.5rem;
+    }
+
+    .bento-large {
+        min-height: 320px;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
     }
 }
 
