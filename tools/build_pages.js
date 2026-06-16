@@ -229,9 +229,9 @@ function generateHTML(category, info, items) {
 </body>
 </html>`;
 
-    const outputPath = path.join(__dirname, '../public', `${category}.html`);
+    const outputPath = path.join(__dirname, '..', `${category}.html`);
     fs.writeFileSync(outputPath, htmlTemplate);
-    console.log(`Generated ${category}.html in public directory`);
+    console.log(`Generated ${category}.html in root directory`);
 }
 
 for (const category in data) {
